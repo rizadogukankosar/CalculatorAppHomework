@@ -20,7 +20,11 @@ if operation == 1:
                     add(number1, number2))
   
 elif operation == 2:
-    print(number1, "/", number2, "=",
-                    divide(number1, number2))
+    if number2 == 0:
+        print("Bölen sayı 0 olamaz")
+    else:
+        print(number1, "/", number2, "=",
+                        divide(number1, number2))
+        
 else:
     print("Geçersiz bir işlem değeri girdiniz")
